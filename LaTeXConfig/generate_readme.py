@@ -67,7 +67,7 @@ def get_outstring(infile):
     
 def get_todo_list(match_str = "% TODO"):
     # run grep command
-    command = "grep -H -n '% TODO' ../**/*.tex > todos.md"
+    command = "grep -H -n '% TODO' **/*.tex *.tex> todos.md"
     os.chdir("../")
     os.system(command)
     os.chdir("LaTeXConfig")
