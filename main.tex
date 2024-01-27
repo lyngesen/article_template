@@ -1,0 +1,43 @@
+\documentclass[preprint,12pt,authoryear]{LaTeXConfig/elsarticle} % Use elsarticle class
+
+\input{LaTeXConfig/preamble.tex} % link to global preamble file
+\input{LaTeXConfig/commands.tex} % link to global commands file. See LaTeXConfig/README.md
+\begin{document}
+
+% TODO: test fix <27-01-24> %
+\title{TITLE\\
+%\vspace*{1.5ex}
+\texorpdfstring{
+\vspace*{1.5ex}
+\small
+% subtitle
+}
+}
+%\author{}
+%\author{Mark Lyngesen, Sune L. Gadegaard, Lars R. Nielsen}
+\author[Aarhus University]{Mark Lyngesen}
+\affiliation[inst1]{organization={Department of Economics and Business Economics, BSS, Aarhus University},%Department and Organization
+            addressline={Fuglsangs Allé 4}, 
+            city={Aarhus},
+            postcode={8000}, 
+            state={Aarhus Municipality},
+            country={Denmark}}
+
+\begin{abstract}
+%% Text of abstract
+\end{abstract}
+
+\maketitle
+ 
+%\pagebreak
+
+\input{sections/introduction.tex}
+
+\input{sections/conclusion.tex}
+\pagebreak
+
+
+\bibliographystyle{LaTeXConfig/elsarticle-num-names} 
+\bibliography{LaTeXConfig/literature}
+
+\end{document}
